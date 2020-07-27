@@ -6,12 +6,9 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import warnings
 
-sample_stocks = ['SPY', 'AAPL', 'MSFT', 'MS','TWTR', 'NOK', 'M','DAL', 'T', 'VALE', 'GE']
 def download_stock_dfs(sample_stocks):
     """Downloads stock dataframes containing OHLCV data for list of tickers using yfinance. 
     """
-    # sample_stocks = ['SPY', 'AAPL', 'MSFT', 'MS', 'TWTR', 'NOK', 'M', 'DAL', 'T', 'VALE', 'GE', 'AMD', 'UAL', 'F', 'INFY', 'OSTK', 'FB', 'MRO', 'C', 'ZNGA', 'PLUG', 'FCEL', 'FCX', 'ET', 'AA', 'JPM', 'PCG', 'PFE', 'BABA', 'CSCO', 'TSLA', 'OXY', 'VZ', 'SEDG', 'SCHW', 'VER', 'DIS', 'EBS', 'KO', 'INO', 'AUY', 'XOM', 'TSM', 'MU', 'UAA', 'VIPS', 'HL', 'NVDA', 'JNJ']
-    # for stock in sample_stocks:
     data = yf.download(  
             tickers = sample_stocks,
 
